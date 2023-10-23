@@ -2,7 +2,8 @@ name: weekly
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 13 * * 1'
+    #- cron: '0 13 * * 1'
+    - cron: '27 18 * * *'
 permissions:
   contents: write
 jobs:
@@ -16,7 +17,7 @@ jobs:
       with:
         python-version: '3.10'
     - name: Install all necessary packages
-      run: pip install jupyter lxml pandas requests beautifulsoup4 html5lib datetime time csv tabula os 
+      run: pip install jupyter lxml pandas requests beautifulsoup4 html5lib tabula
     - name: Scraping this week's data and create csvs for visualization
       run: jupyter nbconvert --to notebook --execute "pay_gap.ipynb" --stdout
     # - name: Adding today's data to larger csv
