@@ -2,8 +2,8 @@ name: weekly
 on:
   workflow_dispatch:
   schedule:
-    #- cron: '0 13 * * 1'
-    - cron: "27 18 * * *"
+    - cron: "0 13 * * 1"
+    # - cron: "27 18 * * *"
 permissions:
   contents: write
 jobs:
