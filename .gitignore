@@ -1,5 +1,10 @@
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Specific notebooks and CSV files
 tennisOCT3.ipynb
 OCT9.ipynb 
 old_tennispay.ipynb
 old_tennisweekly.ipynb
 pay_gap_old.ipynb
+old_atp_live_ranking.csv
